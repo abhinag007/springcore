@@ -2,8 +2,8 @@ package com.springcore;
 
 public class Student {
     private int studentId;
-    private int studentName;
-    private int studentAddress;
+    private String studentName;
+    private String studentAddress;
 
     public int getStudentId() {
         return studentId;
@@ -13,23 +13,23 @@ public class Student {
         this.studentId = studentId;
     }
 
-    public int getStudentName() {
+    public String getStudentName() {
         return studentName;
     }
 
-    public void setStudentName(int studentName) {
+    public void setStudentName(String studentName) {
         this.studentName = studentName;
     }
 
-    public int getStudentAddress() {
+    public String getStudentAddress() {
         return studentAddress;
     }
 
-    public void setStudentAddress(int studentAddress) {
+    public void setStudentAddress(String studentAddress) {
         this.studentAddress = studentAddress;
     }
 
-    public Student(int studentId, int studentName, int studentAddress) {
+    public Student(int studentId, String studentName, String studentAddress) {
         super();
         this.studentId = studentId;
         this.studentName = studentName;
