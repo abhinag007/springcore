@@ -1,5 +1,8 @@
 package com.springcore.lifecycle;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 public class Example {
     private String Subject;
 
@@ -20,5 +23,15 @@ public class Example {
         return "Example{" +
                 "Subject='" + Subject + '\'' +
                 '}';
+    }
+
+    @PostConstruct
+    public void start() {
+        System.out.println("Starting method");
+    }
+
+    @PreDestroy
+    public void end() {
+        System.out.println("Ending Method");
     }
 }

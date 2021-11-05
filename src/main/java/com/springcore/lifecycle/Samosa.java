@@ -1,5 +1,4 @@
 package com.springcore.lifecycle;
-import javax.annotation.*;
 
 public class Samosa {
     private double price;
